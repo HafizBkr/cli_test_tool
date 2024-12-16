@@ -1,0 +1,5 @@
+FROM python:latest
+RUN pip install pytest
+COPY . /app
+WORKDIR /app
+CMD ["pytest"]

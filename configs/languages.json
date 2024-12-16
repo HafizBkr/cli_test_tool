@@ -1,0 +1,34 @@
+{
+  "python": {
+    "docker_image": "python:latest",
+    "command": "python3 /app/%s"
+  },
+  "javascript": {
+    "docker_image": "node:latest",
+    "command": "node /app/%s"
+  },
+  "java": {
+    "docker_image": "openjdk:latest",
+    "command": "javac /app/%s && java -cp /app Main"
+  },
+  "c": {
+    "docker_image": "gcc:latest",
+    "command": "gcc /app/%s -o /app/output && /app/output"
+  },
+  "cpp": {
+    "docker_image": "gcc:latest",
+    "command": "g++ /app/%s -o /app/output && /app/output"
+  },
+  "go": {
+    "docker_image": "golang:latest",
+    "command": "go run /app/%s"
+  },
+  "php": {
+    "docker_image": "php:latest",
+    "command": "php /app/%s"
+  },
+  "ruby": {
+    "docker_image": "ruby:latest",
+    "command": "ruby /app/%s"
+  }
+}
